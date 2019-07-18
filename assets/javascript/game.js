@@ -5,24 +5,31 @@ $(document).ready(function () {
     var greyGem = 0;
     var redGem = 0;
     var randomNumber = "";
-    var numberToBeat =[];
-    var totalScore = "";
+    
 
 
     $("#randomNumber").on("click", function updaterandomNumber () {
 
         randomNumber = Math.floor((Math.random() * 101) + 19);
         document.getElementById("numberToBeat").innerHTML = randomNumber;
-        console.log(randomNumber)
+        // console.log(randomNumber)
 
     })
     
     
     $("#yellowGem").on("click", function () {
 
-        yellowGem++;
+        yellowGem+= 5;
 
-        console.log(yellowGem)
+        var totalScore = new Array ();
+        totalScore.push(yellowGem);
+        totalScore.push(blueGem);
+        totalScore.push(greyGem);
+        totalScore.push(redGem);
+        document.getElementById("myScore").innerHTML = totalScore;
+        
+
+        console.log(totalScore)
 
     })
 
@@ -30,7 +37,7 @@ $(document).ready(function () {
 
         blueGem += 4;
 
-        console.log(blueGem)
+        // console.log(blueGem)
 
     })
 
@@ -38,7 +45,7 @@ $(document).ready(function () {
 
         greyGem += 8;
 
-        console.log(greyGem)
+        // console.log(greyGem)
 
     })
 
@@ -46,14 +53,16 @@ $(document).ready(function () {
 
         redGem += 3;
 
-        console.log(redGem)
+        // console.log(redGem)
 
     })
+
 
     $("#yellowGem").append(yellowGem);
     $("#blueGem").append(blueGem);
     $("#greyGem").append(greyGem);
     $("#redGem").append(redGem);
+   
     
 });
 
