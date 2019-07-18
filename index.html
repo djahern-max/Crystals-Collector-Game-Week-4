@@ -19,8 +19,6 @@
 
 <body>
 
-
-
     <div class="text-success jumbotron row col-4 font-weight-bold float-left border border-dark">
         <p>You will be given a random number at the start of the game</p>
         <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
@@ -29,32 +27,45 @@
         <p>You lose the game if your total score goes above the random number</p>
         <p>The value of each crystal is hidden from you until you click on it.</p>
         <P>Each time when the game starts, the game will change the values of each cyrstal</P>
-      
+
 
     </div>
 
     <div class="row">
-        <img src="assets/images/Crystal 1.jpg" class="img-fluid imgformat float-left m-4 border border-dark" id="yellowGem"
-            alt="Responsive image">
-        <img src="assets/images/Crystal 2.jpg" class="img-fluid imgformat float-left m-4 border border-dark" id="blueGem"
-            alt="Responsive image">
-        <img src="assets/images/Crystal 3.jpg" class="img-fluid imgformat float-left m-4 border border-dark" id="greyGem"
-            alt="Responsive image">
+        <img src="assets/images/Crystal 1.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
+            id="yellowGem" alt="Responsive image">
+        <img src="assets/images/Crystal 2.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
+            id="blueGem" alt="Responsive image">
+        <img src="assets/images/Crystal 3.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
+            id="greyGem" alt="Responsive image">
         <img src="assets/images/Crystal 4.jpg" class="img-fluid imgformat float laft m-4 border border-dark" id="redGem"
             alt="Responsive image">
     </div>
 
 
-    <div class="row randomNumber border border-dark" id = "randomNumber">
-        
-        <p class="col-md-10 p-5" id="numberToBeat">Click Here to Show Number the to Beat:  </p>
-        
+    <div class="row randomNumber border border-dark" id="randomNumber">
+
+        <p class="col-md-10 p-4" id="numberToBeat">Click Here to Show Number the to Beat: </p>
+
     </div>
 
     <div class="row score border border-dark">
-        
-        <p class="col-md-10 p-5" id = "myScore">Your Total Score is: </p>
-       
+
+        <p class="col-md-10 p-4" id="myScore">Your Total Score is: <span id = "usertotal"></span></p>
+
+    </div>
+
+    <div class="row randomNumber border border-dark">
+
+        <p class="col-md-10 p-2">Wins: <span id = "win"></span></p>
+
+    </div>
+
+
+    <div class="row randomNumber border border-dark">
+
+        <p class="col-md-10 p-2">Losses: <span id = "lose"></span></p>
+
     </div>
 
 

@@ -12,7 +12,7 @@ body {
 
 .score {
 
-    background-color: rgb(42, 196, 170);
+    background-color: rgb(212, 225, 241);
     width: 300px;
     font-weight: bold;
     
@@ -20,7 +20,7 @@ body {
 
 .randomNumber {
 
-    background-color: rgb(186, 182, 206);
+    background-color: rgb(212, 225, 241);
     width: 300px;
     font-weight: bold;
     font-size: 20px;
@@ -30,7 +30,7 @@ body {
 
 .score {
 
-    background-color: rgb(156, 240, 229);
+    background-color: rgb(212, 225, 241);
     width: 300px;
     font-weight: bold;
     font-size: 20px;
