@@ -15,4 +15,25 @@ body {
     background-color: rgb(42, 196, 170);
     width: 300px;
     font-weight: bold;
+    
+}
+
+.randomNumber {
+
+    background-color: rgb(186, 182, 206);
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    
+}
+
+.score {
+
+    background-color: rgb(156, 240, 229);
+    width: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    
 }

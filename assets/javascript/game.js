@@ -1,20 +1,72 @@
 $(document).ready(function () {
 
     var yellowGem = 0;
+    var blueGem = 0;
+    var greyGem = 0;
+    var redGem = 0;
+    var randomNumber = "";
+    var numberToBeat =[];
+    var totalScore = "";
 
 
+    $("#randomNumber").on("click", function updaterandomNumber () {
+
+        randomNumber = Math.floor((Math.random() * 101) + 19);
+        document.getElementById("numberToBeat").innerHTML = randomNumber;
+        console.log(randomNumber)
+
+    })
+    
+    
     $("#yellowGem").on("click", function () {
 
         yellowGem++;
 
-        console.log(yellowGem);
+        console.log(yellowGem)
 
-        document.getElementById("yellowGem").innerHTML.yellowGem;
+    })
 
+    $("#blueGem").on("click", function () {
 
-    });
+        blueGem += 4;
 
+        console.log(blueGem)
+
+    })
+
+    $("#greyGem").on("click", function () {
+
+        greyGem += 8;
+
+        console.log(greyGem)
+
+    })
+
+    $("#redGem").on("click", function () {
+
+        redGem += 3;
+
+        console.log(redGem)
+
+    })
+
+    $("#yellowGem").append(yellowGem);
+    $("#blueGem").append(blueGem);
+    $("#greyGem").append(greyGem);
+    $("#redGem").append(redGem);
+    
 });
+
+
+
+
+
+
+
+
+
+
+
 
 
 
