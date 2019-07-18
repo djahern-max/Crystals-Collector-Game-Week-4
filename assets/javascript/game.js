@@ -8,26 +8,25 @@ $(document).ready(function () {
     
 
 
-    $("#randomNumber").on("click", function updaterandomNumber () {
+    $("#randomNumber").on("click", function updaterandomNumber() {
 
         randomNumber = Math.floor((Math.random() * 101) + 19);
         document.getElementById("numberToBeat").innerHTML = randomNumber;
+        
         // console.log(randomNumber)
 
     })
-    
-    
+
+
     $("#yellowGem").on("click", function () {
 
-        yellowGem+= 5;
+        yellowGem += 5;
 
-        var totalScore = new Array ();
+        var totalScore = new Array();
+
         totalScore.push(yellowGem);
-        totalScore.push(blueGem);
-        totalScore.push(greyGem);
-        totalScore.push(redGem);
-        document.getElementById("myScore").innerHTML = totalScore;
         
+        document.getElementById("myScore").innerHTML = totalScore;
 
         console.log(totalScore)
 
@@ -37,7 +36,7 @@ $(document).ready(function () {
 
         blueGem += 4;
 
-        // console.log(blueGem)
+        console.log(blueGem)
 
     })
 
@@ -58,26 +57,10 @@ $(document).ready(function () {
     })
 
 
-    $("#yellowGem").append(yellowGem);
-    $("#blueGem").append(blueGem);
-    $("#greyGem").append(greyGem);
-    $("#redGem").append(redGem);
-   
-    
+    // $("#yellowGem").append(yellowGem);
+    // $("#blueGem").append(blueGem);
+    // $("#greyGem").append(greyGem);
+    // $("#redGem").append(redGem);
+
+
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
