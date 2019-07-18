@@ -1,6 +1,6 @@
 body {
 
-    background-color: rgb(79, 163, 190);
+    background-color: rgb(97, 191, 223);
 }
 
 .imgformat {
@@ -8,5 +8,11 @@ body {
     width: 150px;
     height: 150px;
     
+}
 
+.score {
+
+    background-color: rgb(42, 196, 170);
+    width: 300px;
+    font-weight: bold;
 }
