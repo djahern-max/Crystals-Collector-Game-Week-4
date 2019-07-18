@@ -11,8 +11,9 @@ $(document).ready(function () {
     $("#randomNumber").on("click", function updaterandomNumber() {
 
         randomNumber = Math.floor((Math.random() * 101) + 19);
-        document.getElementById("numberToBeat").innerHTML = randomNumber;
-        
+
+        $("#numberToBeat").append(randomNumber);
+
         // console.log(randomNumber)
 
     })
@@ -25,8 +26,8 @@ $(document).ready(function () {
         var totalScore = new Array();
 
         totalScore.push(yellowGem);
-        
-        document.getElementById("myScore").innerHTML = totalScore;
+
+        $("#myScore").append(totalScore);
 
         console.log(totalScore)
 
@@ -55,12 +56,6 @@ $(document).ready(function () {
         // console.log(redGem)
 
     })
-
-
-    // $("#yellowGem").append(yellowGem);
-    // $("#blueGem").append(blueGem);
-    // $("#greyGem").append(greyGem);
-    // $("#redGem").append(redGem);
 
 
 });
