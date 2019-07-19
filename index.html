@@ -13,62 +13,71 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <h1 class="p-3 mb-2 bg-warning text-dark border border-dark">Cyrstals Collector</h1>
+    
+    <h1 class = "title">Cyrstals Collector</h1>
     <script src="assets/javascript/game.js"></script>
 </head>
 
 <body>
+    <div class="container my-container">
+        <div class="row my row">
+            <div class="col-6 my-col">
+                <div class="text-success jumbotron font-weight-bold float-left border border-dark">
+                    <p>You will be given a random number at the start of the game</p>
+                    <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points
+                        to your
+                        score</p>
+                    <p>You win the game by matching your total score to the random number. </p>
+                    <p>You lose the game if your total score goes above the random number</p>
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+                    <P>Each time when the game starts, the game will change the values of each cyrstal</P>
+                </div>
+            </div>
 
-    <div class="text-success jumbotron row col-4 font-weight-bold float-left border border-dark">
-        <p>You will be given a random number at the start of the game</p>
-        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
-            score</p>
-        <p>You win the game by matching your total score to the random number. </p>
-        <p>You lose the game if your total score goes above the random number</p>
-        <p>The value of each crystal is hidden from you until you click on it.</p>
-        <P>Each time when the game starts, the game will change the values of each cyrstal</P>
+
+            <!-- <div class="row my-row"> -->
+            <div class="col my-col">
+                <img src="assets/images/Crystal 1.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
+                    id="yellowGem" alt="Responsive image">
+                <img src="assets/images/Crystal 2.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
+                    id="blueGem" alt="Responsive image">
+                <img src="assets/images/Crystal 3.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
+                    id="greyGem" alt="Responsive image">
+                <img src="assets/images/Crystal 4.jpg" class="img-fluid imgformat float laft m-4 border border-dark"
+                    id="redGem" alt="Responsive image">
+            </div>
+            <!-- </div> -->
+
+            <div class="row my-row">
+                <div class="col my-col">
+                    <div class="row randomNumber border border-dark" id="randomNumber">
+
+                        <p class="col-md-10 p-4" id="numberToBeat">Click Here to Show Number the to Beat: </p>
+
+                    </div>
+
+                    <div class="row score border border-dark">
+
+                        <p class="col-md-10 p-4" id="myScore">Your Total Score is: <span id="usertotal"></span></p>
+
+                    </div>
+
+                    <div class="row randomNumber border border-dark">
+
+                        <p class="col-md-10 p-2">Wins: <span id="win"></span></p>
+
+                    </div>
 
 
+                    <div class="row randomNumber border border-dark">
+
+                        <p class="col-md-10 p-2">Losses: <span id="lose"></span></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="row">
-        <img src="assets/images/Crystal 1.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
-            id="yellowGem" alt="Responsive image">
-        <img src="assets/images/Crystal 2.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
-            id="blueGem" alt="Responsive image">
-        <img src="assets/images/Crystal 3.jpg" class="img-fluid imgformat float-left m-4 border border-dark"
-            id="greyGem" alt="Responsive image">
-        <img src="assets/images/Crystal 4.jpg" class="img-fluid imgformat float laft m-4 border border-dark" id="redGem"
-            alt="Responsive image">
-    </div>
-
-
-    <div class="row randomNumber border border-dark" id="randomNumber">
-
-        <p class="col-md-10 p-4" id="numberToBeat">Click Here to Show Number the to Beat: </p>
-
-    </div>
-
-    <div class="row score border border-dark">
-
-        <p class="col-md-10 p-4" id="myScore">Your Total Score is: <span id = "usertotal"></span></p>
-
-    </div>
-
-    <div class="row randomNumber border border-dark">
-
-        <p class="col-md-10 p-2">Wins: <span id = "win"></span></p>
-
-    </div>
-
-
-    <div class="row randomNumber border border-dark">
-
-        <p class="col-md-10 p-2">Losses: <span id = "lose"></span></p>
-
-    </div>
-
-
     <script type="text.javascript" src="assets/javascript/game.js"></script>
 </body>
 

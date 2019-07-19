@@ -1,6 +1,12 @@
+.title {
+    text-align: center;
+}
+
+
 body {
 
     background-color: rgb(97, 191, 223);
+    margin: 30px;
 }
 
 .imgformat {
@@ -35,5 +41,17 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-align: center;
+    
+}
+
+.my-container {
+    
+    
+}
+
+.my-row {
+    
+}
+.my-col {
     
 }
