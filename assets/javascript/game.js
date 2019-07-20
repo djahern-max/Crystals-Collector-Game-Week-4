@@ -4,22 +4,22 @@ $(document).ready(function () {
     blue:
     {
       name: "Blue",
-      value: 5
+      value: Math.floor(Math.random() * 10) + 1
     },
     green:
     {
       name: "Green",
-      value: 7
+      value: Math.floor(Math.random() * 20) + 1
     },
     red:
     {
       name: "Red",
-      value: 3
+      value: Math.floor(Math.random() * 5) + 1
     },
     yellow:
     {
       name: "Yellow",
-      value: 12
+      value: Math.floor(Math.random() * 30) + 1
     }
   };
 
@@ -34,7 +34,7 @@ $(document).ready(function () {
     $("#usertotal").html(userTotal);
     randomNumber = Math.floor((Math.random() * 101) + 19);
 
-    $("#numberToBeat").html("this is the number to beat " + randomNumber);
+    $("#numberToBeat").html("Try to Match This Number!  " + randomNumber);
 
     console.log(randomNumber)
 

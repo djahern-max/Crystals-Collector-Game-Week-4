@@ -1,12 +1,13 @@
 .title {
     text-align: center;
+    
 }
 
 
 body {
 
     background-color: rgb(97, 191, 223);
-    margin: 30px;
+    
 }
 
 .imgformat {
@@ -19,7 +20,7 @@ body {
 .score {
 
     background-color: rgb(212, 225, 241);
-    width: 300px;
+    width: 350px;
     font-weight: bold;
     
 }
@@ -37,21 +38,12 @@ body {
 .score {
 
     background-color: rgb(212, 225, 241);
-    width: 300px;
+    width: 350px;
     font-weight: bold;
     font-size: 20px;
     text-align: center;
     
 }
 
-.my-container {
-    
-    
-}
 
-.my-row {
-    
-}
-.my-col {
-    
-}
+
